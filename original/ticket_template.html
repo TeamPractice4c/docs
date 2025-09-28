@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Авиабилет</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #f0f0f0;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+}
+.ticket-info {
+    padding: 20px;
+    max-width: 900px; /* Wider to accommodate text */
+    margin: 0 auto;
+}
+.ticket-section {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.flight-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.flight-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+}
+.flight-detail:last-child {
+    border-bottom: none;
+}
+.flight-detail span {
+    flex: 1;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 0 5px;
+}
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Авиабилетис</h1>
+    <p>Электронный билет</p>
+</div>
+<div class="ticket-info">
+    <div class="ticket-section">
+        <p>Номер заказа: Номер_заказа</p>
+        <p>Класс обслуживания: Класс_обслуживания</p>
+        <p>Электронный билет: Электронный_билет</p>
+    </div>
+    <div class="ticket-section">
+        <p>Пассажир: Пассажир</p>
+    </div>
+    <div class="flight-title">Место_вылета — Место_прилета</div>
+    <div class="ticket-section">
+        <div class="flight-detail"><span>Место_вылета (Код_вылета)</span><span>Время_вылета</span><span>Номер_рейса</span><span>Самолет</span><span>Время_прилета</span><span>Место_прилета (Код_прилета)</span></div>
+        <div class="flight-detail"><span>Аэропорт_вылета</span><span>Дата_вылета</span><span>Продолжительность</span><span>Авиакомпания</span><span>Дата_прилета</span><span>Терминал</span></div>
+    </div>
+    <div class="ticket-section">
+        <p>Номер билета для регистрации: Номер_билета</p>
+        <p>Всего в пути: Общее_время</p>
+        <p>Дата покупки билета: Дата_покупки_билета</p>
+        <p>Стоимость: Стоимость</p>
+    </div>
+</body>
+</html>
