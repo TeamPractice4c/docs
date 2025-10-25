@@ -48,6 +48,7 @@ CREATE TABLE skywhysales.flights (
 	f_departure_time timestamp NOT NULL,
 	f_arrival_time timestamp NOT null,
 	f_seats_count int4 NOT null,
+	f_price int4 not null,
 	CONSTRAINT flights_pk PRIMARY KEY (f_id),
 	CONSTRAINT flights_airlines_fk FOREIGN KEY (f_airline) REFERENCES skywhysales.airlines(al_id) ON DELETE CASCADE ON UPDATE cascade,
 	CONSTRAINT flights_airports_fk FOREIGN KEY (f_departure_airport) REFERENCES skywhysales.airports(ap_id) ON DELETE CASCADE ON UPDATE cascade,
@@ -66,6 +67,7 @@ CREATE TABLE skywhysales.tickets (
 	CONSTRAINT tickets_flights_fk FOREIGN KEY (t_flight) REFERENCES skywhysales.flights(f_id) ON DELETE CASCADE ON UPDATE CASCADE,
 	CONSTRAINT tickets_users_fk FOREIGN KEY (t_user) REFERENCES skywhysales.users(u_id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
 
 
 
